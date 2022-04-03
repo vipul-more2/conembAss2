@@ -1,0 +1,1264 @@
+The system is: Linux - 5.10.17-v7+ - armv7l
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/pi/Assignment2/json-c-build/CMakeFiles/3.16.3/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_db8a9/fast && /usr/bin/make -f CMakeFiles/cmTC_db8a9.dir/build.make CMakeFiles/cmTC_db8a9.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_db8a9.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_db8a9.dir/testCCompiler.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_db8a9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db8a9.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_db8a9.dir/testCCompiler.c.o  -o cmTC_db8a9 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_283bb/fast && /usr/bin/make -f CMakeFiles/cmTC_283bb.dir/build.make CMakeFiles/cmTC_283bb.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_283bb.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_283bb.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+Target: arm-linux-gnueabihf
+Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+Thread model: posix
+gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_283bb.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
+ /usr/lib/gcc/arm-linux-gnueabihf/8/cc1 -quiet -v -imultilib . -imultiarch arm-linux-gnueabihf /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfloat-abi=hard -mfpu=vfp -mtls-dialect=gnu -marm -march=armv6+fp -auxbase-strip CMakeFiles/cmTC_283bb.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccnYrODV.s
+GNU C17 (Raspbian 8.3.0-6+rpi1) version 8.3.0 (arm-linux-gnueabihf)
+	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP
+
+GGC heuristics: --param ggc-min-expand=93 --param ggc-min-heapsize=118299
+ignoring nonexistent directory "/usr/local/include/arm-linux-gnueabihf"
+ignoring nonexistent directory "/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/arm-linux-gnueabihf/8/include
+ /usr/local/include
+ /usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed
+ /usr/include/arm-linux-gnueabihf
+ /usr/include
+End of search list.
+GNU C17 (Raspbian 8.3.0-6+rpi1) version 8.3.0 (arm-linux-gnueabihf)
+	compiled by GNU C version 8.3.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.20-GMP
+
+GGC heuristics: --param ggc-min-expand=93 --param ggc-min-heapsize=118299
+Compiler executable checksum: bcc8c085e8c103b65550a3bb7c44a354
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_283bb.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
+ as -v -march=armv6 -mfloat-abi=hard -mfpu=vfp -meabi=5 -o CMakeFiles/cmTC_283bb.dir/CMakeCCompilerABI.c.o /tmp/ccnYrODV.s
+GNU assembler version 2.31.1 (arm-linux-gnueabihf) using BFD version (GNU Binutils for Raspbian) 2.31.1
+COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/
+LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_283bb.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
+Linking C executable cmTC_283bb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_283bb.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_283bb.dir/CMakeCCompilerABI.c.o  -o cmTC_283bb 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper
+Target: arm-linux-gnueabihf
+Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+Thread model: posix
+gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) 
+COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/
+LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_283bb'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
+ /usr/lib/gcc/arm-linux-gnueabihf/8/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccs6u3Bl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -o cmTC_283bb /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/8 -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_283bb.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_283bb'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/arm-linux-gnueabihf/8/include]
+    add: [/usr/local/include]
+    add: [/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed]
+    add: [/usr/include/arm-linux-gnueabihf]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/arm-linux-gnueabihf/8/include] ==> [/usr/lib/gcc/arm-linux-gnueabihf/8/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed] ==> [/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed]
+  collapse include dir [/usr/include/arm-linux-gnueabihf] ==> [/usr/include/arm-linux-gnueabihf]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/arm-linux-gnueabihf/8/include;/usr/local/include;/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed;/usr/include/arm-linux-gnueabihf;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_283bb/fast && /usr/bin/make -f CMakeFiles/cmTC_283bb.dir/build.make CMakeFiles/cmTC_283bb.dir/build]
+  ignore line: [make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_283bb.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_283bb.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [Target: arm-linux-gnueabihf]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_283bb.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
+  ignore line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/cc1 -quiet -v -imultilib . -imultiarch arm-linux-gnueabihf /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfloat-abi=hard -mfpu=vfp -mtls-dialect=gnu -marm -march=armv6+fp -auxbase-strip CMakeFiles/cmTC_283bb.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccnYrODV.s]
+  ignore line: [GNU C17 (Raspbian 8.3.0-6+rpi1) version 8.3.0 (arm-linux-gnueabihf)]
+  ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.1.2  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.20-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=93 --param ggc-min-heapsize=118299]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/arm-linux-gnueabihf"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/arm-linux-gnueabihf/8/../../../../arm-linux-gnueabihf/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed]
+  ignore line: [ /usr/include/arm-linux-gnueabihf]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Raspbian 8.3.0-6+rpi1) version 8.3.0 (arm-linux-gnueabihf)]
+  ignore line: [	compiled by GNU C version 8.3.0  GMP version 6.1.2  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.20-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=93 --param ggc-min-heapsize=118299]
+  ignore line: [Compiler executable checksum: bcc8c085e8c103b65550a3bb7c44a354]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_283bb.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
+  ignore line: [ as -v -march=armv6 -mfloat-abi=hard -mfpu=vfp -meabi=5 -o CMakeFiles/cmTC_283bb.dir/CMakeCCompilerABI.c.o /tmp/ccnYrODV.s]
+  ignore line: [GNU assembler version 2.31.1 (arm-linux-gnueabihf) using BFD version (GNU Binutils for Raspbian) 2.31.1]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_283bb.dir/CMakeCCompilerABI.c.o' '-c'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
+  ignore line: [Linking C executable cmTC_283bb]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_283bb.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_283bb.dir/CMakeCCompilerABI.c.o  -o cmTC_283bb ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper]
+  ignore line: [Target: arm-linux-gnueabihf]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_283bb'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
+  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccs6u3Bl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -o cmTC_283bb /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/8 -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_283bb.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o]
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccs6u3Bl.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-armhf.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_283bb] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/8] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/8]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/8/../../..] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/8/../../..]
+    arg [-L/lib/arm-linux-gnueabihf] ==> dir [/lib/arm-linux-gnueabihf]
+    arg [-L/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/lib/arm-linux-gnueabihf]
+    arg [CMakeFiles/cmTC_283bb.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/arm-linux-gnueabihf/8] ==> [/usr/lib/gcc/arm-linux-gnueabihf/8]
+  collapse library dir [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  collapse library dir [/usr/lib/gcc/arm-linux-gnueabihf/8/../../..] ==> [/usr/lib]
+  collapse library dir [/lib/arm-linux-gnueabihf] ==> [/lib/arm-linux-gnueabihf]
+  collapse library dir [/usr/lib/arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/arm-linux-gnueabihf/8;/usr/lib/arm-linux-gnueabihf;/usr/lib;/lib/arm-linux-gnueabihf]
+  implicit fwks: []
+
+
+Determining if the include file sys/resource.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_acbfd/fast && /usr/bin/make -f CMakeFiles/cmTC_acbfd.dir/build.make CMakeFiles/cmTC_acbfd.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_acbfd.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_acbfd.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_acbfd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_acbfd.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_acbfd.dir/CheckIncludeFile.c.o  -o cmTC_acbfd 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the getrusage exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_84fa9/fast && /usr/bin/make -f CMakeFiles/cmTC_84fa9.dir/build.make CMakeFiles/cmTC_84fa9.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84fa9.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_84fa9.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_84fa9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84fa9.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_84fa9.dir/CheckSymbolExists.c.o  -o cmTC_84fa9 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/resource.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getrusage
+  return ((int*)(&getrusage))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1d20e/fast && /usr/bin/make -f CMakeFiles/cmTC_1d20e.dir/build.make CMakeFiles/cmTC_1d20e.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1d20e.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_1d20e.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1d20e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d20e.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_1d20e.dir/CheckIncludeFile.c.o  -o cmTC_1d20e  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7a608/fast && /usr/bin/make -f CMakeFiles/cmTC_7a608.dir/build.make CMakeFiles/cmTC_7a608.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7a608.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_7a608.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_7a608
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a608.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7a608.dir/CheckIncludeFile.c.o  -o cmTC_7a608  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdarg.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_523be/fast && /usr/bin/make -f CMakeFiles/cmTC_523be.dir/build.make CMakeFiles/cmTC_523be.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_523be.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_523be.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_523be
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_523be.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_523be.dir/CheckIncludeFile.c.o  -o cmTC_523be  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2c830/fast && /usr/bin/make -f CMakeFiles/cmTC_2c830.dir/build.make CMakeFiles/cmTC_2c830.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2c830.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_2c830.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_2c830
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c830.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_2c830.dir/CheckIncludeFile.c.o  -o cmTC_2c830  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c0a12/fast && /usr/bin/make -f CMakeFiles/cmTC_c0a12.dir/build.make CMakeFiles/cmTC_c0a12.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c0a12.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_c0a12.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c0a12
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0a12.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c0a12.dir/CheckIncludeFile.c.o  -o cmTC_c0a12  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file syslog.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d9740/fast && /usr/bin/make -f CMakeFiles/cmTC_d9740.dir/build.make CMakeFiles/cmTC_d9740.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d9740.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_d9740.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_d9740
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9740.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d9740.dir/CheckIncludeFile.c.o  -o cmTC_d9740  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files stdlib.h;stdarg.h;string.h;float.h exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dba1a/fast && /usr/bin/make -f CMakeFiles/cmTC_dba1a.dir/build.make CMakeFiles/cmTC_dba1a.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dba1a.dir/STDC_HEADERS.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_dba1a.dir/STDC_HEADERS.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CheckIncludeFiles/STDC_HEADERS.c
+Linking C executable cmTC_dba1a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dba1a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_dba1a.dir/STDC_HEADERS.c.o  -o cmTC_dba1a  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ddfbf/fast && /usr/bin/make -f CMakeFiles/cmTC_ddfbf.dir/build.make CMakeFiles/cmTC_ddfbf.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ddfbf.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_ddfbf.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ddfbf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ddfbf.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ddfbf.dir/CheckIncludeFile.c.o  -o cmTC_ddfbf  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_67e27/fast && /usr/bin/make -f CMakeFiles/cmTC_67e27.dir/build.make CMakeFiles/cmTC_67e27.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_67e27.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_67e27.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_67e27
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67e27.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_67e27.dir/CheckIncludeFile.c.o  -o cmTC_67e27  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_85478/fast && /usr/bin/make -f CMakeFiles/cmTC_85478.dir/build.make CMakeFiles/cmTC_85478.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_85478.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_85478.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_85478
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85478.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_85478.dir/CheckIncludeFile.c.o  -o cmTC_85478  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file endian.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f0d0e/fast && /usr/bin/make -f CMakeFiles/cmTC_f0d0e.dir/build.make CMakeFiles/cmTC_f0d0e.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f0d0e.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_f0d0e.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f0d0e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0d0e.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f0d0e.dir/CheckIncludeFile.c.o  -o cmTC_f0d0e  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file limits.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8ce17/fast && /usr/bin/make -f CMakeFiles/cmTC_8ce17.dir/build.make CMakeFiles/cmTC_8ce17.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8ce17.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_8ce17.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_8ce17
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ce17.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_8ce17.dir/CheckIncludeFile.c.o  -o cmTC_8ce17  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file locale.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4f457/fast && /usr/bin/make -f CMakeFiles/cmTC_4f457.dir/build.make CMakeFiles/cmTC_4f457.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4f457.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_4f457.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_4f457
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f457.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_4f457.dir/CheckIncludeFile.c.o  -o cmTC_4f457  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_91efa/fast && /usr/bin/make -f CMakeFiles/cmTC_91efa.dir/build.make CMakeFiles/cmTC_91efa.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_91efa.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_91efa.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_91efa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91efa.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_91efa.dir/CheckIncludeFile.c.o  -o cmTC_91efa  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a2e7d/fast && /usr/bin/make -f CMakeFiles/cmTC_a2e7d.dir/build.make CMakeFiles/cmTC_a2e7d.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a2e7d.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_a2e7d.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a2e7d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2e7d.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a2e7d.dir/CheckIncludeFile.c.o  -o cmTC_a2e7d  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b4be5/fast && /usr/bin/make -f CMakeFiles/cmTC_b4be5.dir/build.make CMakeFiles/cmTC_b4be5.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b4be5.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_b4be5.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b4be5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4be5.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b4be5.dir/CheckIncludeFile.c.o  -o cmTC_b4be5  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/cdefs.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cf956/fast && /usr/bin/make -f CMakeFiles/cmTC_cf956.dir/build.make CMakeFiles/cmTC_cf956.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cf956.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_cf956.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_cf956
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf956.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_cf956.dir/CheckIncludeFile.c.o  -o cmTC_cf956  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/param.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fe920/fast && /usr/bin/make -f CMakeFiles/cmTC_fe920.dir/build.make CMakeFiles/cmTC_fe920.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fe920.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_fe920.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_fe920
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe920.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_fe920.dir/CheckIncludeFile.c.o  -o cmTC_fe920  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/random.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_762cd/fast && /usr/bin/make -f CMakeFiles/cmTC_762cd.dir/build.make CMakeFiles/cmTC_762cd.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_762cd.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_762cd.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_762cd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_762cd.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_762cd.dir/CheckIncludeFile.c.o  -o cmTC_762cd  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0242a/fast && /usr/bin/make -f CMakeFiles/cmTC_0242a.dir/build.make CMakeFiles/cmTC_0242a.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0242a.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_0242a.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0242a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0242a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_0242a.dir/CheckIncludeFile.c.o  -o cmTC_0242a  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the INFINITY exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_de660/fast && /usr/bin/make -f CMakeFiles/cmTC_de660.dir/build.make CMakeFiles/cmTC_de660.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_de660.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_de660.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_de660
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de660.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_de660.dir/CheckSymbolExists.c.o  -o cmTC_de660  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef INFINITY
+  return ((int*)(&INFINITY))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the isinf exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d27c1/fast && /usr/bin/make -f CMakeFiles/cmTC_d27c1.dir/build.make CMakeFiles/cmTC_d27c1.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d27c1.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_d27c1.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d27c1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d27c1.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d27c1.dir/CheckSymbolExists.c.o  -o cmTC_d27c1  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef isinf
+  return ((int*)(&isinf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the isnan exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a2dba/fast && /usr/bin/make -f CMakeFiles/cmTC_a2dba.dir/build.make CMakeFiles/cmTC_a2dba.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a2dba.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_a2dba.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_a2dba
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2dba.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a2dba.dir/CheckSymbolExists.c.o  -o cmTC_a2dba  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef isnan
+  return ((int*)(&isnan))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the nan exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cbc2d/fast && /usr/bin/make -f CMakeFiles/cmTC_cbc2d.dir/build.make CMakeFiles/cmTC_cbc2d.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cbc2d.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_cbc2d.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_cbc2d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbc2d.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_cbc2d.dir/CheckSymbolExists.c.o  -o cmTC_cbc2d  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef nan
+  return ((int*)(&nan))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the snprintf exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cd62f/fast && /usr/bin/make -f CMakeFiles/cmTC_cd62f.dir/build.make CMakeFiles/cmTC_cd62f.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cd62f.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_cd62f.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_cd62f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd62f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_cd62f.dir/CheckSymbolExists.c.o  -o cmTC_cd62f  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef snprintf
+  return ((int*)(&snprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vasprintf exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_53d9b/fast && /usr/bin/make -f CMakeFiles/cmTC_53d9b.dir/build.make CMakeFiles/cmTC_53d9b.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_53d9b.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_53d9b.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_53d9b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53d9b.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_53d9b.dir/CheckSymbolExists.c.o  -o cmTC_53d9b  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vasprintf
+  return ((int*)(&vasprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vsnprintf exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a757c/fast && /usr/bin/make -f CMakeFiles/cmTC_a757c.dir/build.make CMakeFiles/cmTC_a757c.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a757c.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_a757c.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_a757c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a757c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a757c.dir/CheckSymbolExists.c.o  -o cmTC_a757c  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vsnprintf
+  return ((int*)(&vsnprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vprintf exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4087f/fast && /usr/bin/make -f CMakeFiles/cmTC_4087f.dir/build.make CMakeFiles/cmTC_4087f.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4087f.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_4087f.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_4087f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4087f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_4087f.dir/CheckSymbolExists.c.o  -o cmTC_4087f  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vprintf
+  return ((int*)(&vprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the open exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8fff9/fast && /usr/bin/make -f CMakeFiles/cmTC_8fff9.dir/build.make CMakeFiles/cmTC_8fff9.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8fff9.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_8fff9.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_8fff9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8fff9.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_8fff9.dir/CheckSymbolExists.c.o  -o cmTC_8fff9  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fcntl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef open
+  return ((int*)(&open))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the realloc exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5b08f/fast && /usr/bin/make -f CMakeFiles/cmTC_5b08f.dir/build.make CMakeFiles/cmTC_5b08f.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5b08f.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_5b08f.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_5b08f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b08f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_5b08f.dir/CheckSymbolExists.c.o  -o cmTC_5b08f  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef realloc
+  return ((int*)(&realloc))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the setlocale exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_67370/fast && /usr/bin/make -f CMakeFiles/cmTC_67370.dir/build.make CMakeFiles/cmTC_67370.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_67370.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_67370.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_67370
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67370.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_67370.dir/CheckSymbolExists.c.o  -o cmTC_67370  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <locale.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setlocale
+  return ((int*)(&setlocale))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the uselocale exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d2cee/fast && /usr/bin/make -f CMakeFiles/cmTC_d2cee.dir/build.make CMakeFiles/cmTC_d2cee.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d2cee.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_d2cee.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d2cee
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2cee.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d2cee.dir/CheckSymbolExists.c.o  -o cmTC_d2cee  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <locale.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef uselocale
+  return ((int*)(&uselocale))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strcasecmp exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7a23f/fast && /usr/bin/make -f CMakeFiles/cmTC_7a23f.dir/build.make CMakeFiles/cmTC_7a23f.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7a23f.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_7a23f.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_7a23f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a23f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7a23f.dir/CheckSymbolExists.c.o  -o cmTC_7a23f  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <strings.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcasecmp
+  return ((int*)(&strcasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strncasecmp exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9b8d9/fast && /usr/bin/make -f CMakeFiles/cmTC_9b8d9.dir/build.make CMakeFiles/cmTC_9b8d9.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9b8d9.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_9b8d9.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_9b8d9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b8d9.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_9b8d9.dir/CheckSymbolExists.c.o  -o cmTC_9b8d9  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <strings.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncasecmp
+  return ((int*)(&strncasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strdup exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_78e29/fast && /usr/bin/make -f CMakeFiles/cmTC_78e29.dir/build.make CMakeFiles/cmTC_78e29.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_78e29.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_78e29.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_78e29
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78e29.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_78e29.dir/CheckSymbolExists.c.o  -o cmTC_78e29  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strdup
+  return ((int*)(&strdup))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strerror exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d6c6c/fast && /usr/bin/make -f CMakeFiles/cmTC_d6c6c.dir/build.make CMakeFiles/cmTC_d6c6c.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d6c6c.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_d6c6c.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d6c6c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6c6c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d6c6c.dir/CheckSymbolExists.c.o  -o cmTC_d6c6c  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror
+  return ((int*)(&strerror))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vsyslog exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_16729/fast && /usr/bin/make -f CMakeFiles/cmTC_16729.dir/build.make CMakeFiles/cmTC_16729.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_16729.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_16729.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_16729
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16729.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_16729.dir/CheckSymbolExists.c.o  -o cmTC_16729  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <syslog.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vsyslog
+  return ((int*)(&vsyslog))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getrandom exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b30ae/fast && /usr/bin/make -f CMakeFiles/cmTC_b30ae.dir/build.make CMakeFiles/cmTC_b30ae.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b30ae.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_b30ae.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b30ae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b30ae.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b30ae.dir/CheckSymbolExists.c.o  -o cmTC_b30ae  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/random.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getrandom
+  return ((int*)(&getrandom))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strtoll exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cb663/fast && /usr/bin/make -f CMakeFiles/cmTC_cb663.dir/build.make CMakeFiles/cmTC_cb663.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cb663.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_cb663.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_cb663
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb663.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_cb663.dir/CheckSymbolExists.c.o  -o cmTC_cb663  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtoll
+  return ((int*)(&strtoll))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strtoull exist passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f39d8/fast && /usr/bin/make -f CMakeFiles/cmTC_f39d8.dir/build.make CMakeFiles/cmTC_f39d8.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f39d8.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_f39d8.dir/CheckSymbolExists.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f39d8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f39d8.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f39d8.dir/CheckSymbolExists.c.o  -o cmTC_f39d8  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtoull
+  return ((int*)(&strtoull))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f1269/fast && /usr/bin/make -f CMakeFiles/cmTC_f1269.dir/build.make CMakeFiles/cmTC_f1269.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1269.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_f1269.dir/CheckIncludeFile.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f1269
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1269.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f1269.dir/CheckIncludeFile.c.o  -o cmTC_f1269  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of int passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_61c34/fast && /usr/bin/make -f CMakeFiles/cmTC_61c34.dir/build.make CMakeFiles/cmTC_61c34.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_61c34.dir/SIZEOF_INT.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_61c34.dir/SIZEOF_INT.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_INT.c
+Linking C executable cmTC_61c34
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61c34.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_61c34.dir/SIZEOF_INT.c.o  -o cmTC_61c34  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of int64_t passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_408d8/fast && /usr/bin/make -f CMakeFiles/cmTC_408d8.dir/build.make CMakeFiles/cmTC_408d8.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_408d8.dir/SIZEOF_INT64_T.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_408d8.dir/SIZEOF_INT64_T.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_INT64_T.c
+Linking C executable cmTC_408d8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_408d8.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_408d8.dir/SIZEOF_INT64_T.c.o  -o cmTC_408d8  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of long passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a59bc/fast && /usr/bin/make -f CMakeFiles/cmTC_a59bc.dir/build.make CMakeFiles/cmTC_a59bc.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a59bc.dir/SIZEOF_LONG.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_a59bc.dir/SIZEOF_LONG.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_LONG.c
+Linking C executable cmTC_a59bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a59bc.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a59bc.dir/SIZEOF_LONG.c.o  -o cmTC_a59bc  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of long long passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ea75f/fast && /usr/bin/make -f CMakeFiles/cmTC_ea75f.dir/build.make CMakeFiles/cmTC_ea75f.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ea75f.dir/SIZEOF_LONG_LONG.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_ea75f.dir/SIZEOF_LONG_LONG.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_LONG_LONG.c
+Linking C executable cmTC_ea75f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea75f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ea75f.dir/SIZEOF_LONG_LONG.c.o  -o cmTC_ea75f  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of size_t passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_37f6a/fast && /usr/bin/make -f CMakeFiles/cmTC_37f6a.dir/build.make CMakeFiles/cmTC_37f6a.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_37f6a.dir/SIZEOF_SIZE_T.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_37f6a.dir/SIZEOF_SIZE_T.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.c
+Linking C executable cmTC_37f6a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37f6a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_37f6a.dir/SIZEOF_SIZE_T.c.o  -o cmTC_37f6a  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of ssize_t passed with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_141e5/fast && /usr/bin/make -f CMakeFiles/cmTC_141e5.dir/build.make CMakeFiles/cmTC_141e5.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_141e5.dir/SIZEOF_SSIZE_T.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE   -o CMakeFiles/cmTC_141e5.dir/SIZEOF_SSIZE_T.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_SSIZE_T.c
+Linking C executable cmTC_141e5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_141e5.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_141e5.dir/SIZEOF_SSIZE_T.c.o  -o cmTC_141e5  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test HAVE_ATOMIC_BUILTINS succeeded with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a0410/fast && /usr/bin/make -f CMakeFiles/cmTC_a0410.dir/build.make CMakeFiles/cmTC_a0410.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a0410.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE  -DHAVE_ATOMIC_BUILTINS -fPIE   -o CMakeFiles/cmTC_a0410.dir/src.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_a0410
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0410.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE_ATOMIC_BUILTINS    -rdynamic CMakeFiles/cmTC_a0410.dir/src.c.o  -o cmTC_a0410  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { int i, x = 0; i = __sync_add_and_fetch(&x,1); return x; }
+Performing C SOURCE FILE Test HAVE___THREAD succeeded with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2f459/fast && /usr/bin/make -f CMakeFiles/cmTC_2f459.dir/build.make CMakeFiles/cmTC_2f459.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2f459.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE  -DHAVE___THREAD -fPIE   -o CMakeFiles/cmTC_2f459.dir/src.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_2f459
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f459.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE___THREAD    -rdynamic CMakeFiles/cmTC_2f459.dir/src.c.o  -o cmTC_2f459  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+__thread int x = 0; int main() { return 0; }
+Performing C SOURCE FILE Test REENTRANT_WORKS succeeded with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f1bc9/fast && /usr/bin/make -f CMakeFiles/cmTC_f1bc9.dir/build.make CMakeFiles/cmTC_f1bc9.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1bc9.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -DREENTRANT_WORKS -fPIE   -o CMakeFiles/cmTC_f1bc9.dir/src.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_f1bc9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1bc9.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -DREENTRANT_WORKS    -rdynamic CMakeFiles/cmTC_f1bc9.dir/src.c.o  -o cmTC_f1bc9  -lm 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+	/* uClibc toolchains without threading barf when _REENTRANT is defined */
+	#define _REENTRANT 1
+	#include <sys/types.h>
+	int main (void)
+	{
+	  return 0;
+	}
+	
+Performing C SOURCE FILE Test BSYMBOLIC_WORKS succeeded with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_46095/fast && /usr/bin/make -f CMakeFiles/cmTC_46095.dir/build.make CMakeFiles/cmTC_46095.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_46095.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -DBSYMBOLIC_WORKS -fPIE   -o CMakeFiles/cmTC_46095.dir/src.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_46095
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46095.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -DBSYMBOLIC_WORKS    -rdynamic CMakeFiles/cmTC_46095.dir/src.c.o  -o cmTC_46095  -lm -Wl,-Bsymbolic-functions 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+	int main (void)
+	{
+	  return 0;
+	}
+	
+Performing C SOURCE FILE Test VERSION_SCRIPT_WORKS succeeded with the following output:
+Change Dir: /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_eab1e/fast && /usr/bin/make -f CMakeFiles/cmTC_eab1e.dir/build.make CMakeFiles/cmTC_eab1e.dir/build
+make[1]: Entering directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eab1e.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -DVERSION_SCRIPT_WORKS -fPIE   -o CMakeFiles/cmTC_eab1e.dir/src.c.o   -c /home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_eab1e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eab1e.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes -DVERSION_SCRIPT_WORKS    -rdynamic CMakeFiles/cmTC_eab1e.dir/src.c.o  -o cmTC_eab1e  -lm -Wl,--version-script,/home/pi/Assignment2/json-c-build/check-version-script.sym 
+make[1]: Leaving directory '/home/pi/Assignment2/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+	int main (void)
+	{
+	  return 0;
+	}
+	

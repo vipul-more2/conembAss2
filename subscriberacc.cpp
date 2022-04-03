@@ -2,7 +2,7 @@
 
 #include "stdlib.h"
 
-#include "string.h"
+#include <string>
 
 #include "MQTTClient.h"
 
@@ -34,10 +34,9 @@
 using namespace std;
 
 
-
-
-
 void json_parse(json_object *jobj) { //parsing json data
+
+printf("Parser Called 1");
 
  enum json_type type;
 
@@ -46,6 +45,8 @@ void json_parse(json_object *jobj) { //parsing json data
  type = json_object_get_type(val);
 
  double temperature;
+
+printf("Parser Called 2");
 
  switch (type) {
 
@@ -128,9 +129,11 @@ int msgarrvd(void *context, char *topicName, int topicLen, MQTTClient_message *m
     }
 
     putchar('\n');
+ char  str[] = "{ \"Temperature\" : 40.00 }";
 
-    json_object * jobj = json_tokener_parse((char*) message->payload);
+    json_object *jobj = json_tokener_parse(str);
 
+printf("function calling");
     json_parse(jobj);
 
     MQTTClient_freeMessage(&message);
@@ -204,6 +207,21 @@ int main(int argc, char* argv[]) {
     MQTTClient_disconnect(client, 10000);
 
     MQTTClient_destroy(&client);
+
+if (wiringPiSetup()<0)
+{
+printf("setup fail");
+exit(1);
+}
+
+for (int i=0;i<5;++i)
+{
+pinMode (0,OUTPUT);
+digitalWrite(0,1);
+usleep(10000);
+digitalWrite(0,0);
+usleep(10000);
+}
 
     return rc;
 

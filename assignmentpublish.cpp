@@ -8,10 +8,10 @@
 using namespace std;
 
 //Creating and defining 
-#define ADDRESS "tcp://192.168.0.227:1883"
-#define CLIENTID "rpi1"
-#define AUTHMETHOD "vipul"
-#define AUTHTOKEN "groot"
+#define ADDRESS "tcp://192.168.0.219:1883"
+#define CLIENTID "rpi10"
+#define AUTHMETHOD "amit"
+#define AUTHTOKEN "3004"
 #define TOPIC "ee513/CPUTemp"
 #define QOS 1
 #define TIMEOUT 10000L

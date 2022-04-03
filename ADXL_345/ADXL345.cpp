@@ -1,26 +1,46 @@
+: 17 May 2014
+ * Copyright (c) 2014 Derek Molloy (www.derekmolloy.ie)
+ * Made available for the book "Exploring Raspberry Pi"
+ * See: www.exploringrpi.com
+ * Licensed under the EUPL V.1.1
+ *
+ * This Software is provided to You under the terms of the European 
+ * Union Public License (the "EUPL") version 1.1 as published by the 
+ * European Union. Any use of this Software, other than as authorized 
+ * under this License is strictly prohibited (to the extent such use 
+ * is covered by a right of the copyright holder of this Software).
+ * 
+ * This Software is provided under the License on an "AS IS" basis and 
+ * without warranties of any kind concerning the Software, including 
+ * without limitation merchantability, fitness for a particular purpose, 
+ * absence of defects or errors, accuracy, and non-infringement of 
+ * intellectual property rights other than copyright. This disclaimer 
+ * of warranty is an essential part of the License and a condition for 
+ * the grant of any rights to this Software.
+ * 
+ * For more details, see http://www.derekmolloy.ie/
+ */
+
 #include "ADXL345.h"
 #include <iostream>
 #include <unistd.h>
 #include <math.h>
 #include <stdio.h>
-
-//Added headers
 #include <pthread.h>
 #include "MQTTClient.h"
 #define CPU_TEMP "/sys/class/thermal/thermal_zone0/temp"
+
 #include <sstream>
 #include <fstream>
 #include <string.h>
+
 #define ADDRESS "tcp://192.168.0.227:1883"
-#define CLIENTID "rpi3"
+#define CLIENTID "rpi5"
 #define AUTHMETHOD "vipul"
 #define AUTHTOKEN "groot"
 #define TOPIC "ee513/CPUTemp"
 #define QOS 1
 #define TIMEOUT 10000L
-
-//added headers
-
 
 using namespace std;
 
@@ -58,9 +78,10 @@ namespace exploringRPi {
 #define FIFO_CTL       0x38   //FIFO control
 #define FIFO_STATUS    0x39   //FIFO status
 
-
-//Load temperature from the CPU using the code used in the publisher file 
-float getCPUTemperature() { // get the CPU temperature
+/**
+ * Get the CPU Temperature
+ */
+float getCPUTemperature() { 
   int cpuTemp; // store as an int
   fstream fs;
   fs.open(CPU_TEMP, fstream::in); // read from the file
@@ -69,7 +90,9 @@ float getCPUTemperature() { // get the CPU temperature
   return (((float)cpuTemp)/1000);
 }
 
-//Accessing local time 
+/**
+ * Get the RTC value
+ */
 int getRTC(){
   time_t now = time(0);
   tm *ltm = localtime(&now);
@@ -77,6 +100,7 @@ int getRTC(){
   int i = 1 + ltm->tm_sec;
   return i;
 }
+
 
 /**
  * Method to combine two 8-bit registers into a single short, which is 16-bits on the Raspberry Pi. It shifts
@@ -206,51 +230,60 @@ void ADXL345::displayPitchAndRoll(int iterations){
 	}
 }
 
-int ADXL345::publish(int loop){
-  int count = 0;
-  int rc;
-  while(count<loop){
-  this->readSensorState();
-  char str_payload[100]; // Set your max message size here
-  MQTTClient client;
-  MQTTClient_connectOptions opts = MQTTClient_connectOptions_initializer;
-  MQTTClient_message pubmsg = MQTTClient_message_initializer;
-  MQTTClient_deliveryToken token;
-  MQTTClient_create(&client, ADDRESS, CLIENTID, MQTTCLIENT_PERSISTENCE_NONE, NULL);
-  MQTTClient_willOptions will = MQTTClient_willOptions_initializer;
-  char error[50];
-  sprintf(error, "\n Publish is interrupted!");
-  will.qos = QOS;
-  will.topicName = TOPIC;
-  will.message = error;
-  opts.will = &will;
-  opts.keepAliveInterval = 20;
-  opts.cleansession = 1;
-  opts.username = AUTHMETHOD;
-  opts.password = AUTHTOKEN;
-  if ((rc = MQTTClient_connect(client, &opts)) != MQTTCLIENT_SUCCESS) {
-    cout << "Failed to connect, return code " << rc << endl;
-    return -1;
-  }
-  sprintf(str_payload, "{\"CPUTemp\": %f }, {\"Time in seconds\": \"%i\" }, {\"Pitch\": %f }, {\"Roll\": %f }", getCPUTemperature(), getRTC(), this->getPitch(), this->getRoll());
-  pubmsg.payload = str_payload;
-  pubmsg.payloadlen = strlen(str_payload);
-  pubmsg.qos = QOS;
-  pubmsg.retained = 0;
-  MQTTClient_publishMessage(client, TOPIC, &pubmsg, &token);
-  cout << "Waiting for up to " << (int)(TIMEOUT/1000) <<
-    " seconds for publication of " << str_payload <<
-    " \non topic " << TOPIC << " for ClientID: " << CLIENTID << endl;
-  rc = MQTTClient_waitForCompletion(client, token, TIMEOUT);
-  cout << "Message with token " << (int)token << " delivered." << endl;
-  MQTTClient_disconnect(client, 10000);
-  MQTTClient_destroy(&client);
-  count ++;
-  }
-  return rc;
+int ADXL345::publish(){
+
+        int loop=6;
+        int i=0;
+	int rc;
+
+        while(i<loop){
+        char str_payload[100]; // Set your max message size here
+        char str_payload1[100];
+	MQTTClient client;
+	MQTTClient_connectOptions opts = MQTTClient_connectOptions_initializer;
+	MQTTClient_message pubmsg = MQTTClient_message_initializer;
+	MQTTClient_deliveryToken token;
+	MQTTClient_create(&client, ADDRESS, CLIENTID, MQTTCLIENT_PERSISTENCE_NONE,
+			NULL);
+        MQTTClient_willOptions lastWill = MQTTClient_willOptions_initializer;
+        char lastWillMsg[100];
+        sprintf(lastWillMsg, "The Client has been disconnected");
+        lastWill.qos=QOS;
+        lastWill.topicName=TOPIC;
+        lastWill.message=lastWillMsg;
+        opts.will=&lastWill;
+	opts.keepAliveInterval = 20;
+	opts.cleansession = 1;
+	opts.username = AUTHMETHOD;
+	opts.password = AUTHTOKEN;
+	if ((rc = MQTTClient_connect(client, &opts)) != MQTTCLIENT_SUCCESS) {
+		cout << "Failed to connect, return code " << rc << endl;
+		return -1;
+	}
+	sprintf(str_payload, "{\"CPUTemp\": %f }, {\"Time in seconds\": \"%i\" },{\"ADXL345 Pitch\": %f }, {\"ADXL345 Roll\": \"%f\"}", getCPUTemperature(), getRTC(),  this->getPitch(), this->getRoll());
+        //sprintf(str_payload1, "{\"d\":{\"Pitch\": %f }}, {\"Roll\": \"%f\" }", this->getPitch(), this->getRoll());
+        this->displayPitchAndRoll(5);
+	pubmsg.payload = str_payload;
+	pubmsg.payloadlen = strlen(str_payload);
+        //pubmsg.payload = str_payload1;
+        //pubmsg.payloadlen = strlen(str_payload1);
+	pubmsg.qos = QOS;
+	pubmsg.retained = 0;
+	MQTTClient_publishMessage(client, TOPIC, &pubmsg, &token);
+	cout << "Waiting for up to " << (int) (TIMEOUT / 1000)
+			<< " seconds for publication of " << str_payload << " \non topic "
+			<< TOPIC << " for ClientID: " << CLIENTID << endl;
+	rc = MQTTClient_waitForCompletion(client, token, TIMEOUT);
+	cout << "Message with token " << (int) token << " delivered." << endl;
+	MQTTClient_disconnect(client, 10000);
+	MQTTClient_destroy(&client);
+	i++;
+}
+	return rc;
 }
 
 
 ADXL345::~ADXL345() {}
 
 } /* namespace exploringRPi */
+

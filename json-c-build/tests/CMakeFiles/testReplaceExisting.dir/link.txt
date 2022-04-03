@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/testReplaceExisting.dir/testReplaceExisting.c.o  -o testReplaceExisting  -Wl,-rpath,/home/pi/Assignment2/json-c-build ../libjson-c.so.5.1.0 
