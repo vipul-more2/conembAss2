@@ -1,4 +1,4 @@
-: 17 May 2014
+/*: 17 May 2014
  * Copyright (c) 2014 Derek Molloy (www.derekmolloy.ie)
  * Made available for the book "Exploring Raspberry Pi"
  * See: www.exploringrpi.com
@@ -28,6 +28,8 @@
 #include <stdio.h>
 #include <pthread.h>
 #include "MQTTClient.h"
+#include <time.h>
+
 #define CPU_TEMP "/sys/class/thermal/thermal_zone0/temp"
 
 #include <sstream>
@@ -78,6 +80,8 @@ namespace exploringRPi {
 #define FIFO_CTL       0x38   //FIFO control
 #define FIFO_STATUS    0x39   //FIFO status
 
+//int timeinf=0;
+
 /**
  * Get the CPU Temperature
  */
@@ -93,12 +97,12 @@ float getCPUTemperature() {
 /**
  * Get the RTC value
  */
-int getRTC(){
-  time_t now = time(0);
-  tm *ltm = localtime(&now);
-  string ss;
-  int i = 1 + ltm->tm_sec;
-  return i;
+int  getTime(){
+  time_t timenow = time(0);
+  tm *ltm = localtime(&timenow);
+  int i= 1+ ltm->tm_sec;
+ return i;
+ 
 }
 
 
@@ -230,9 +234,9 @@ void ADXL345::displayPitchAndRoll(int iterations){
 	}
 }
 
-int ADXL345::publish(){
+int ADXL345::publish(int loop){
 
-        int loop=6;
+       // int loop=6;
         int i=0;
 	int rc;
 
@@ -247,7 +251,7 @@ int ADXL345::publish(){
 			NULL);
         MQTTClient_willOptions lastWill = MQTTClient_willOptions_initializer;
         char lastWillMsg[100];
-        sprintf(lastWillMsg, "The Client has been disconnected");
+        sprintf(lastWillMsg, "connection disrupted, this is last will message");
         lastWill.qos=QOS;
         lastWill.topicName=TOPIC;
         lastWill.message=lastWillMsg;
@@ -260,13 +264,13 @@ int ADXL345::publish(){
 		cout << "Failed to connect, return code " << rc << endl;
 		return -1;
 	}
-	sprintf(str_payload, "{\"CPUTemp\": %f }, {\"Time in seconds\": \"%i\" },{\"ADXL345 Pitch\": %f }, {\"ADXL345 Roll\": \"%f\"}", getCPUTemperature(), getRTC(),  this->getPitch(), this->getRoll());
-        //sprintf(str_payload1, "{\"d\":{\"Pitch\": %f }}, {\"Roll\": \"%f\" }", this->getPitch(), this->getRoll());
+
+	sprintf(str_payload, "{\"CPUTemp\": %f , \"Time in seconds\": \"%i\" ,\"Pitch\": %f , \"Roll\": %f}", getCPUTemperature(),getTime(),  this->getPitch(), this->getRoll());
+        
         this->displayPitchAndRoll(5);
 	pubmsg.payload = str_payload;
 	pubmsg.payloadlen = strlen(str_payload);
-        //pubmsg.payload = str_payload1;
-        //pubmsg.payloadlen = strlen(str_payload1);
+        
 	pubmsg.qos = QOS;
 	pubmsg.retained = 0;
 	MQTTClient_publishMessage(client, TOPIC, &pubmsg, &token);

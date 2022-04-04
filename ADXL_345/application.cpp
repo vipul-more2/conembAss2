@@ -27,12 +27,12 @@
 //#include "ADXL345.h"
 #include <unistd.h>
 #include <pthread.h>
-#include "AD345.h"
+#include "ADXL345.h"
 using namespace std;
 using namespace exploringRPi;
 
 int main() {
-   AD345 sensor(1,0x53);
+   ADXL345 sensor(1,0x53);
    sensor.setResolution(ADXL345::NORMAL);
    sensor.setRange(ADXL345::PLUSMINUS_4_G);
   // sensor.displayPitchAndRoll();
